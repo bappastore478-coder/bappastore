@@ -416,7 +416,15 @@ body {
     .services-grid,
     .choices-grid,
     .contact-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+
+    .qualification-grid > *,
+    .services-grid > *,
+    .choices-grid > *,
+    .contact-grid > * {
+        width: 100% !important;
+        max-width: 100% !important;
     }
 }
 
