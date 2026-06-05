@@ -151,6 +151,17 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
+.scheme-card .btn-secondary {
+    background: var(--wb-blue);
+    color: var(--wb-white);
+    border-color: transparent;
+}
+
+.scheme-card .btn-secondary:hover {
+    background: #093069;
+    color: var(--wb-white);
+}
+
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.22);
 }
@@ -231,6 +242,15 @@ body {
     font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 14px;
+}
+
+.scheme-card-actions {
+    margin-top: 18px;
+}
+
+.scheme-card-header .btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
 }
 
 .scheme-card h3 {
@@ -757,6 +777,28 @@ body {
 .footer-item a {
     color: #ffd166;
     text-decoration: none;
+}
+
+.footer-meta {
+    max-width: 1100px;
+    margin: 0 auto 12px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    color: #d8e2f4;
+    font-size: 0.95rem;
+}
+
+.footer-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.visitor-counter strong {
+    color: #ffd166;
+    font-weight: 700;
 }
 
 .footer-note {
