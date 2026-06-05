@@ -22,7 +22,7 @@
     </div>
 
     <div class="ticker-banner">
-        <p>🔥 ANNAPURNA YOJANA ONLINE APPLICATION IS NOW LIVE!</p>
+        <p>New: Apply for RRB 11,000+ ALP posts and SBI 7,150 Apprentice openings at our center now! Last date approaching soon.</p>
     </div>
 
     <section class="hero">
@@ -49,16 +49,19 @@
                     <span class="scheme-pill">West Bengal Welfare</span>
                     <h3>Annapurna Yojana (Annapurna Bhandar Scheme)</h3>
                 </div>
-                <p class="scheme-intro"><strong>Current Status:</strong> The scheme has officially started, and applications are being accepted via <strong>Offline Mode (Physical Paper Forms) And Online Mode both.</strong>.</p>
+                <p class="scheme-intro"><strong>Current Status:</strong> The scheme has officially started, and applications are being accepted via <strong>Offline Mode (Physical Paper Forms)</strong>.</p>
                 <ul class="scheme-list">
                     <li><strong>Our Services (for Offline mode):</strong> High-quality form printing and guided hand-fill assistance to avoid rejection by BDO/Municipal checkers.</li>
                     <li>Social security database checks to ensure your records are up to date.</li>
                     <li><strong>Bring:</strong> Aadhaar Card, Voter ID (EPIC), Digital Ration Card, PAN card, and Aadhaar-linked Bank Passbook.</li>
                 </ul>
-                        <ul class="scheme-list">
+                <ul class="scheme-list">
                     <li><strong>Our Services (for Online mode):</strong> We are fully equipped with high-speed internet to complete your multi-page digital family profile entry error-free.</li>
                     <li><strong>Bring:</strong> Aadhaar Card, Voter ID (EPIC), Digital Ration Card and PAN card.</li>
                 </ul>
+                <div class="scheme-card-actions">
+                    <a href="contact.html" class="btn btn-secondary">Apply at Our Center</a>
+                </div>
             </div>
 
             <div class="scheme-card">
@@ -141,8 +144,21 @@
                 <p>Phone: <a href="tel:9932431045">9932431045</a>, <a href="tel:9614098527">9614098527</a></p>
             </div>
         </div>
-        <div class="footer-note">© Bappa Store 2026 | All rights reserved. | This websites is designed and developed by Arjun Paul.</div>
+        <div class="footer-meta">
+            <span>Last updated: 3 June 2026</span>
+            <span class="visitor-counter">Visitors: <strong id="visitorCount">0</strong></span>
+        </div>
+        <div class="footer-note">© Bappa Store 2026 | All rights reserved.</div>
     </footer>
 
+    <script>
+        const visitorCountEl = document.getElementById('visitorCount');
+        if (visitorCountEl) {
+            const storageKey = 'bappaStoreVisitorCount';
+            const visits = Number(localStorage.getItem(storageKey) || 0) + 1;
+            localStorage.setItem(storageKey, visits);
+            visitorCountEl.textContent = visits.toLocaleString('en-IN');
+        }
+    </script>
 </body>
 </html>
